@@ -1,4 +1,4 @@
-# Mcentral
+# MCentral
 
 To start your Phoenix app:
 

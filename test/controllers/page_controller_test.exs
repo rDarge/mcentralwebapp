@@ -1,5 +1,5 @@
-defmodule Mcentral.PageControllerTest do
-  use Mcentral.ConnCase
+defmodule MCentral.PageControllerTest do
+  use MCentral.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

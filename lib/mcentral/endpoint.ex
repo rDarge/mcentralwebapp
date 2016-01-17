@@ -1,7 +1,7 @@
-defmodule Mcentral.Endpoint do
+defmodule MCentral.Endpoint do
   use Phoenix.Endpoint, otp_app: :mcentral
 
-  socket "/socket", Mcentral.UserSocket
+  socket "/socket", MCentral.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -35,5 +35,5 @@ defmodule Mcentral.Endpoint do
     key: "_mcentral_key",
     signing_salt: "A7M4Nxaf"
 
-  plug Mcentral.Router
+  plug MCentral.Router
 end

@@ -1,5 +1,5 @@
-defmodule Mcentral.PageController do
-  use Mcentral.Web, :controller
+defmodule MCentral.PageController do
+  use MCentral.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

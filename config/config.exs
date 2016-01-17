@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :mcentral, Mcentral.Endpoint,
+config :mcentral, MCentral.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "WkV4sGd02rvHT9r4Nmd8mUgECLE+shldkjW0Pq546fvVsS2H13EcahHw0C3nqCcm",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Mcentral.PubSub,
+  pubsub: [name: MCentral.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

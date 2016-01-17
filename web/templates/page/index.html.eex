@@ -1,12 +1,16 @@
+<div class="welcometitle">
+  <h4 class="welcomemat"><%= gettext "Welcome to %{name}: A tool to maintain your Minecraft cloud instances", name: "MCentral" %></h4> 
+</div>
+</br>
+<h4>Console Output</h4>
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2><%= console_output %></h2>
 </div>
 
 <div class="row marketing">
   <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
+    <h4>Tools</h4>
+    <!--ul>
       <li>
         <a href="http://phoenixframework.org/docs/overview">Guides</a>
       </li>
@@ -16,20 +20,17 @@
       <li>
         <a href="https://github.com/phoenixframework/phoenix">Source</a>
       </li>
-    </ul>
+    </ul-->
   </div>
 
   <div class="col-lg-6">
-    <h4>Help</h4>
+    <h4>Controls</h4>
     <ul>
       <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
+        <a href onclick="<%=MCentral.ServerController.startServer%>">Start Server</a>
       </li>
       <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+        <a href="#">Stop Server</a>
       </li>
     </ul>
   </div>

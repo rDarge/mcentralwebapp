@@ -1,3 +1,3 @@
-defmodule Mcentral.LayoutView do
-  use Mcentral.Web, :view
+defmodule MCentral.LayoutView do
+  use MCentral.Web, :view
 end

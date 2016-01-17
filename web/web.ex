@@ -1,12 +1,12 @@
-defmodule Mcentral.Web do
+defmodule MCentral.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Mcentral.Web, :controller
-      use Mcentral.Web, :view
+      use MCentral.Web, :controller
+      use MCentral.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Mcentral.Web do
     quote do
       use Phoenix.Controller
 
-      alias Mcentral.Repo
+      alias MCentral.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Mcentral.Router.Helpers
-      import Mcentral.Gettext
+      import MCentral.Router.Helpers
+      import MCentral.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Mcentral.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Mcentral.Router.Helpers
-      import Mcentral.ErrorHelpers
-      import Mcentral.Gettext
+      import MCentral.Router.Helpers
+      import MCentral.ErrorHelpers
+      import MCentral.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Mcentral.Web do
     quote do
       use Phoenix.Channel
 
-      alias Mcentral.Repo
+      alias MCentral.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import Mcentral.Gettext
+      import MCentral.Gettext
     end
   end
 

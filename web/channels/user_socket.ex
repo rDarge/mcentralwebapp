@@ -1,8 +1,8 @@
-defmodule Mcentral.UserSocket do
+defmodule MCentral.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Mcentral.RoomChannel
+  # channel "rooms:*", MCentral.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -30,7 +30,7 @@ defmodule Mcentral.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     Mcentral.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
+  #     MCentral.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil

@@ -1,3 +1,3 @@
-defmodule Mcentral.LayoutViewTest do
-  use Mcentral.ConnCase, async: true
+defmodule MCentral.LayoutViewTest do
+  use MCentral.ConnCase, async: true
 end

@@ -1,4 +1,4 @@
-defmodule Mcentral.Mixfile do
+defmodule MCentral.Mixfile do
   use Mix.Project
 
   def project do
@@ -17,7 +17,7 @@ defmodule Mcentral.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Mcentral, []},
+    [mod: {MCentral, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex, :httpoison]]
   end
