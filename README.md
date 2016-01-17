@@ -1,4 +1,4 @@
-# MCentral
+# MCentral Webapp
 
 This is the webapp component of MCentral, a tool to help manage cloud-based game servers.  
 
