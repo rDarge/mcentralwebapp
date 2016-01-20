@@ -17,6 +17,9 @@ defmodule MCentral.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/startserver", ServerController, :startServer
+    get "/stopserver", ServerController, :stopServer
+    get "/bananas", BananaController, :do
   end
 
   # Other scopes may use custom stacks.

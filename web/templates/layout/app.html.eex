@@ -7,6 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script language="javascript"> 
+        //refactorrrrr
+        ServerExec = function(msg){
+          var root = "/";
+          var context = root.concat(msg);
+          $.get(context);
+        };
+    </script>
+
     <title>MCentral</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
@@ -30,6 +39,7 @@
       </main>
 
     </div> <!-- /container -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

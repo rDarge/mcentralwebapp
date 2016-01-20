@@ -3,34 +3,23 @@
 </div>
 </br>
 <h4>Console Output</h4>
-<div class="jumbotron">
-  <h2><%= console_output %></h2>
+<div id="messages" class="jumbotron">
 </div>
+<input id="server-input" type="text"></input>
 
 <div class="row marketing">
   <div class="col-lg-6">
     <h4>Tools</h4>
-    <!--ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul-->
   </div>
 
   <div class="col-lg-6">
     <h4>Controls</h4>
     <ul>
       <li>
-        <a href onclick="<%=MCentral.ServerController.startServer%>">Start Server</a>
+        <input type="button" value="Start Server" id="start-server" onClick="ServerExec('startserver');" />
       </li>
       <li>
-        <a href="#">Stop Server</a>
+        <input type="button" value="Stop Server" id="stop-server" onClick="ServerExec('stopserver');" />        
       </li>
     </ul>
   </div>

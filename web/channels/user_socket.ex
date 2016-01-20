@@ -2,7 +2,7 @@ defmodule MCentral.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", MCentral.RoomChannel
+  channel "status:*", MCentral.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

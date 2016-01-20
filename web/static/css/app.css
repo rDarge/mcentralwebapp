@@ -32,7 +32,7 @@ form.link, form.button {
 }
 
 .welcometitle{
-	border-bottom: 2 px;
+	border-bottom: 2px;
 }
 
 .welcomemat{
@@ -58,7 +58,7 @@ form.link, form.button {
 
 /* Main marketing message */
 .jumbotron {
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #ffffff;
 }
 
