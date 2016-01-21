@@ -1,35 +1,25 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<div class="welcometitle">
+  <h4 class="welcomemat"><%= gettext "Welcome to %{name}: A tool to maintain your Minecraft cloud instances", name: "MCentral" %></h4> 
 </div>
+</br>
+<h4>Console Output</h4>
+<div id="messages" class="jumbotron">
+</div>
+<input id="server-input" type="text"></input>
 
 <div class="row marketing">
   <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+    <h4>Tools</h4>
   </div>
 
   <div class="col-lg-6">
-    <h4>Help</h4>
+    <h4>Controls</h4>
     <ul>
       <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
+        <input type="button" value="Start Server" id="start-server" onClick="ServerExec('startserver');" />
       </li>
       <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+        <input type="button" value="Stop Server" id="stop-server" onClick="ServerExec('stopserver');" />        
       </li>
     </ul>
   </div>

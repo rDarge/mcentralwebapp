@@ -1,3 +1,3 @@
-defmodule Mcentral.PageViewTest do
-  use Mcentral.ConnCase, async: true
+defmodule MCentral.PageViewTest do
+  use MCentral.ConnCase, async: true
 end

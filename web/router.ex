@@ -1,5 +1,5 @@
-defmodule Mcentral.Router do
-  use Mcentral.Web, :router
+defmodule MCentral.Router do
+  use MCentral.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,17 @@ defmodule Mcentral.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Mcentral do
+  scope "/", MCentral do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/startserver", ServerController, :startServer
+    get "/stopserver", ServerController, :stopServer
+    get "/bananas", BananaController, :do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Mcentral do
+  # scope "/api", MCentral do
   #   pipe_through :api
   # end
 end

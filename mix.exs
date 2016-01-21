@@ -1,4 +1,4 @@
-defmodule Mcentral.Mixfile do
+defmodule MCentral.Mixfile do
   use Mix.Project
 
   def project do
@@ -17,9 +17,9 @@ defmodule Mcentral.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Mcentral, []},
+    [mod: {MCentral, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,7 +36,11 @@ defmodule Mcentral.Mixfile do
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:httpoison, "~> 0.8.0"},
+     {:poison, "~> 1.5"},
+     {:sshex, "~> 2.0.1"},
+     {:aws, "~> 0.0.7"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

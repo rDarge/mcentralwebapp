@@ -1,4 +1,4 @@
-defmodule Mcentral.ErrorHelpers do
+defmodule MCentral.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Mcentral.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Mcentral.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(MCentral.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Mcentral.Gettext, "errors", msg)
+    Gettext.dgettext(MCentral.Gettext, "errors", msg)
   end
 end

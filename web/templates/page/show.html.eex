@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h2>Server Status: <%= @status %></h2>
+</div>
+
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>Tools</h4>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Controls</h4>
+    <ul>
+      <li>
+        <a href onclick="<%=MCentral.ServerController.startServer%>">Start Server</a>
+      </li>
+      <li>
+        <a href="#">Stop Server</a>
+      </li>
+    </ul>
+  </div>
+</div-->

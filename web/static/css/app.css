@@ -31,6 +31,14 @@ form.link, form.button {
   background-size: 519px 71px;
 }
 
+.welcometitle{
+	border-bottom: 2px;
+}
+
+.welcomemat{
+	text-align: center;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing {
@@ -50,6 +58,11 @@ form.link, form.button {
 
 /* Main marketing message */
 .jumbotron {
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+}
+
+.consoleoutput {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -73,6 +86,9 @@ form.link, form.button {
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
+    border-bottom: 0;
+  }
+  .console-output {
     border-bottom: 0;
   }
 }

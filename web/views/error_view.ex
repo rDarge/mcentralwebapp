@@ -1,5 +1,5 @@
-defmodule Mcentral.ErrorView do
-  use Mcentral.Web, :view
+defmodule MCentral.ErrorView do
+  use MCentral.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

@@ -1,4 +1,4 @@
-defmodule Mcentral.ChannelCase do
+defmodule MCentral.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,20 +20,20 @@ defmodule Mcentral.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias Mcentral.Repo
+      alias MCentral.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query, only: [from: 1, from: 2]
 
 
       # The default endpoint for testing
-      @endpoint Mcentral.Endpoint
+      @endpoint MCentral.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Mcentral.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(MCentral.Repo, [])
     end
 
     :ok

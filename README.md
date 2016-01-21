@@ -1,19 +1,7 @@
-# Mcentral
+# MCentral Webapp
 
-To start your Phoenix app:
+This is the webapp component of MCentral, a tool to help manage cloud-based game servers.  
 
-  1. Install dependencies with `mix deps.get`
-  2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  3. Start Phoenix endpoint with `mix phoenix.server`
+First supported game is currently both vanilla Minecraft and modded Minecraft.  This webapp is provided as a robust way to interact with the server interface.  
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+See the [server interface](https://github.com/atlasicus/MCentralServer) for more info on how the server is interacted with.
